@@ -1,4 +1,5 @@
 import React from "react";
+import BAAM from "./BAAM.png"; 
 
 const Navbar = ({ goHome }) => {
   return (
@@ -8,7 +9,7 @@ const Navbar = ({ goHome }) => {
     >
       <div className="container">
         <a
-          className="navbar-brand text-white"
+          className="navbar-brand text-white me-auto"
           href="#!"
           style={{ fontWeight: "bold" }}
           onClick={(e) => {
@@ -16,7 +17,7 @@ const Navbar = ({ goHome }) => {
             goHome();
           }}
         >
-          NETTEN
+          <img src={BAAM} alt="Logo" height="60" />
         </a>
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav ms-auto">
